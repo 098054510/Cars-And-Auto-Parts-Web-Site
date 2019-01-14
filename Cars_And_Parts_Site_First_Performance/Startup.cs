@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using Cars_And_Parts_Site_First_Performance.Models;
 
 namespace Cars_And_Parts_Site_First_Performance
 {
@@ -33,6 +35,10 @@ namespace Cars_And_Parts_Site_First_Performance
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<Cars_And_Parts_Site_First_PerformanceContext>(options =>
+                    options.UseMySql(Configuration.GetConnectionString("Cars_And_Parts_Site_First_PerformanceContext"), 
+                    builder => builder.MigrationsAssembly("Cars_And_Parts_Site_First_Performance")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
