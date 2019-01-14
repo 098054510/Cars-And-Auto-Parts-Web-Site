@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Cars_And_Parts_Site_First_Performance.Models;
+using Cars_And_Parts_Site_First_Performance.Models.ViewModels;
 
 namespace Cars_And_Parts_Site_First_Performance.Controllers
 {
@@ -17,7 +17,7 @@ namespace Cars_And_Parts_Site_First_Performance.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "";
 
             return View();
         }
