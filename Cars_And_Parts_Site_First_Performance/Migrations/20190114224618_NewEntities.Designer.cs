@@ -3,14 +3,16 @@ using System;
 using Cars_And_Parts_Site_First_Performance.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Cars_And_Parts_Site_First_Performance.Migrations
 {
     [DbContext(typeof(Cars_And_Parts_Site_First_PerformanceContext))]
-    partial class Cars_And_Parts_Site_First_PerformanceContextModelSnapshot : ModelSnapshot
+    [Migration("20190114224618_NewEntities")]
+    partial class NewEntities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

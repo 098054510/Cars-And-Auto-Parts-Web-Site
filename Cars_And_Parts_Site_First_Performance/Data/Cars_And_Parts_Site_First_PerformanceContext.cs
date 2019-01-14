@@ -13,6 +13,9 @@ namespace Cars_And_Parts_Site_First_Performance.Models
         {
         }
 
-        public DbSet<Cars_And_Parts_Site_First_Performance.Models.DepartmentModel> DepartmentModel { get; set; }
+        public DbSet<DepartmentModel> DepartmentModel { get; set; }
+        public DbSet<Accessory> Accessories { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Full_Stock_Car> Full_Stock_Cars { get; set; }
     }
 }
