@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cars_And_Parts_Site_First_Performance", "Cars_And_Parts_Site_First_Performance\Cars_And_Parts_Site_First_Performance.csproj", "{F5B7C51E-4FE9-4A34-8DEE-772073193014}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cars_And_Parts_Site_First_Performance", "Cars_And_Parts_Site_First_Performance\Cars_And_Parts_Site_First_Performance.csproj", "{F5B7C51E-4FE9-4A34-8DEE-772073193014}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
